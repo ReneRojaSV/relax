@@ -1,0 +1,611 @@
+:root{
+    --blanco: #ffff;
+    --primario: #bd7420;
+    --secundario: #0b1c2b;
+    --terciario: rgb(104, 71, 33);
+}
+
+/*Fuentes*/
+
+@font-face {
+    font-family:CaviarDreams;
+    src: url(../fonts/CaviarDreams.ttf);
+}
+
+
+@font-face {
+    font-family:CaviarDreams_Bold;
+    src: url(../fonts/CaviarDreams_Bold.ttf);
+}
+
+@font-face {
+    font-family:germinaregular;
+    src: url(../fonts/germinaregular.ttf);
+}
+/*Reinica los valores de la pagina*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+    
+
+    /*Ayuda a controlar el scroll al bajar la pantalla*/
+    scroll-snap-type: mandatory;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--secundario);
+}
+
+/*HEADER*/
+
+.logo{
+    display: block;
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 150px;
+    height: 100px;
+}
+
+/*Boton Volver*/
+.contenedor-volver{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contenido-volver a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-family: germinaregular;
+    font-size: 40px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+/*Navegacion*/
+
+.nav-bg{
+    background: linear-gradient(rgb(189, 116, 32),rgb(104, 71, 33));
+    height: 2.4rem;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navegacion a{
+    font-size: 1.2rem;
+    color: var(--blanco);
+    margin-top: 7.5px;
+    text-decoration: none;
+    font-family: CaviarDreams_Bold;
+    text-transform: uppercase;
+    display: block;
+    
+}
+
+.navegacion a:hover{
+    text-decoration: underline;
+    color: var(--secundario);
+    font-weight: 600;
+
+}
+
+/*Portada*/
+
+h1{
+    color:var(--blanco);
+    font-family: germinaregular;
+    font-weight: 500;
+    font-size: 60px;
+    margin-top: 190px;
+}
+
+.portada{
+    background-image: url(../img/portada.jpeg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+
+.textos-portada{
+    display: flex;
+    height: 350px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+/*Nosotros*/
+
+.contedor-nosotros{
+    margin-top: 30px;
+}
+
+.textos-nosotros h2{
+    color: var(--blanco);
+    font-family: germinaregular;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.textos-nosotros p{
+    color: var(--blanco);
+    font-family: CaviarDreams;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 150%;
+    
+}
+
+.textos-nosotros span{
+    font-family: CaviarDreams_Bold;
+    color: #bd7420
+}
+
+
+
+/*Menu*/
+
+.menu-titulo h2{
+    color: var(--blanco);
+    font-family: germinaregular;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    margin-top: 50px;
+}
+
+
+/*Micheladas*/
+
+.micheladas{
+    background-image: url(../img/Micheladas2.jpeg);
+    width: 100%;
+    height: 350px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    
+}
+
+.textos-micheladas{
+    display: flex;
+    height: 350px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.micheladas h2{
+    color: var(--blanco);
+    font-family: germinaregular;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.micheladas a{
+    color: var(--blanco);
+    font-family: CaviarDreams_Bold;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/*cafe*/
+
+.cafe{
+    background-image: url(../img/cafe.jpeg);
+    width: 100%;
+    height: 350px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    
+}
+
+.textos-cafe{
+    display: flex;
+    height: 350px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.cafe h2{
+    color: var(--blanco);
+    font-family: germinaregular;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.cafe a{
+    color: var(--blanco);
+    font-family: CaviarDreams_Bold;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/*tragos*/
+
+.tragos{
+    background-image: url(../img/sangria.jpeg);
+    width: 100%;
+    height: 350px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    
+}
+
+.textos-tragos{
+    display: flex;
+    height: 350px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.tragos h2{
+    color: var(--blanco);
+    font-family: germinaregular;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.tragos a{
+    color: var(--blanco);
+    font-family: CaviarDreams_Bold;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/*comida*/
+
+.comida{
+    background-image: url(../img/comida.jpeg);
+    width: 100%;
+    height: 350px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    
+}
+
+.textos-comida{
+    display: flex;
+    height: 350px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.comida h2{
+    color: var(--blanco);
+    font-family: germinaregular;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.comida a{
+    color: var(--blanco);
+    font-family: CaviarDreams_Bold;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/*ubicacion*/
+
+.ubicacion{
+    color: var(--blanco);
+    font-family: germinaregular;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    margin-top: 50px;
+}
+
+/*final*/
+
+.final{
+    color: var(--blanco);
+    font-family: germinaregular;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    margin-top: 50px;
+}
+
+/*footer*/
+.contenedor-footer{
+    background: linear-gradient(rgb(189, 116, 32),rgb(104, 71, 33));
+    height: 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.textos-footer a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-family: CaviarDreams_Bold;
+    font-size: 15px;
+}
+
+/******************************************************/
+/*Pagina Cervezas*/
+
+.textos-cerveza h1{
+    color:var(--blanco);
+    font-family: germinaregular;
+    font-weight: 500;
+    font-size: 60px;
+    margin-top: 100px;
+}
+
+.portada-cerveza{
+    background-image: url(../img/micheladas3.jpeg);
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+}
+
+.textos-cerveza{
+    display: flex;
+    height: 350px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+/*Menu1*/
+.contenedor-menu1{
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+}
+
+.contenedor-menu1 ul>li>a{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 5px;
+    line-height: 100%;
+    font-family: CaviarDreams;
+}
+
+.contenedor-menu1 span{
+    font-family: CaviarDreams_Bold;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.contenedor-menu1 ul>li{
+    list-style-image: url(../img/birria.png);
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/******************************************************/
+/*Pagina Bocas*/
+
+/*Menu2*/
+
+.textos-bocas h1{
+    color:var(--blanco);
+    font-family: germinaregular;
+    font-weight: 500;
+    font-size: 60px;
+    margin-top: 100px;
+}
+
+.portada-bocas{
+    background-image: url(../img/comida.jpeg);
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+}
+
+.textos-bocas{
+    display: flex;
+    height: 350px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.contenedor-menu2{
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+}
+
+.contenedor-menu2 ul>li>a{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 5px;
+    line-height: 100%;
+    font-family: CaviarDreams;
+}
+
+.contenedor-menu2 span{
+    font-family: CaviarDreams_Bold;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.contenedor-menu2 ul>li{
+    list-style-image: url(../img/nachos.png);
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/******************************************************/
+/*Pagina cafe*/
+
+/*Menu4*/
+
+.textos-cafe h1{
+    color:var(--blanco);
+    font-family: germinaregular;
+    font-weight: 500;
+    font-size: 60px;
+    margin-top: 100px;
+}
+
+.portada-cafe{
+    background-image: url(../img/cafe.jpeg);
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+}
+
+.textos-bocas{
+    display: flex;
+    height: 350px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.contenedor-menu4{
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+}
+
+.contenedor-menu4 ul>li>a{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 5px;
+    line-height: 100%;
+    font-family: CaviarDreams;
+}
+
+.contenedor-menu4 span{
+    font-family: CaviarDreams_Bold;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.contenedor-menu4 ul>li{
+    list-style-image: url(../img/cafe.png);
+    margin-left: 90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.textos-nosotros-cafe h2{
+    color: var(--blanco);
+    text-align: center;
+    font-size: 45px;
+    font-family: germinaregular;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.textos-nosotros-cafe span{
+    font-size: 50px;
+    font-family: germinaregular;
+    color: var(--primario);
+}
+
+.textos-nosotros-cafe h3{
+    color: var(--primario);
+    text-align: center;
+    font-size: 25px;
+    font-family: CaviarDreams_Bold;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-bottom: 8px;
+}
+
+.textos-nosotros-cafe p{
+    color: var(--primario);
+    text-align: center;
+    font-size: 15px;
+    font-family: CaviarDreams_Bold;
+    font-weight: 500;
+}
+
+.textos-nosotros-cafe a span{
+    font-size: 35px;
+}
+
+
+
+
